@@ -1,5 +1,5 @@
 # Project Description:
-This project is a work of process for the upcoming submission of HackYoung Olympiad.
+This project is a work of process for the upcoming submission of HackYoung Olympiad. You can view an HTML file with a web browser, but make sure to download the file first, as it is the recommended method.
 
 Please don't change or remove images, this README.md file, or unnecessary files. Thank you.
 
