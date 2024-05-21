@@ -16,3 +16,4 @@ Use the "resources" folder to put in files like images, videos, or audio files. 
 - The main page "index.html" is where I put general information of water sanitation (already completed).
 - Activities page "activities.html" is where I put recommended activities for conserving water. You can put minigames there as well (with Python and pyscript).
 - Management page "management.html" is where I put how people have previously, and are still, using water, and how they are being conserved right now.
+- Images can only be from the public domain.
