@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/style.css" media="screen">
         <title>Fun Activities!</title>
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
     </head>
     <body>
         <div style="background-image: url(resources/collecting_water_river.png); width: 100%;">
@@ -21,8 +23,8 @@
             </div>
             <div style="height: 500px"></div>
         </div>
-
-        <!--Add stuff here.-->
+        <div id="output"></div>
+        <script type="py" src="assets/activities.py" config="assets/pyscript.json"></script>
 
         <p style="font-size: 13px;">
             All images used here are in the public domain unless when specified. These authors have given up their rights and ownerships of their works and released them to the public to be used freely. This is without requiring permissions and attributions, to the fullest extent permitted by applicable law.
