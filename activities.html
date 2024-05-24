@@ -8,6 +8,8 @@
         <title>Fun Activities!</title>
         <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
         <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+<!--        <script type="module" src="./pyscript/core.js"></script>-->
+<!--        <link rel="stylesheet" href="./pyscript/core.css">-->
     </head>
     <body>
         <div style="background-image: url(resources/collecting_water_river.png); width: 100%;">
@@ -31,11 +33,17 @@
                     <h3></h3>
                 </div>
             </div>
-            <img class="right">
+<!--            <img class="right">-->
         </div>
 
-        <div id="output"></div>
-        <script type="py" src="assets/activities.py" config="assets/pyscript.json"></script>
+        <p id="output"></p>
+
+        <py-script config="./package.json">
+            from pyscript import write
+
+            # document.querySelector("#output").innerText = "Hello World"-->
+            write("output", "Hello World")
+        </py-script>
 
         <p style="font-size: 13px;">
             All images used here are in the public domain unless when specified. These authors have given up their rights and ownerships of their works and released them to the public to be used freely. This is without requiring permissions and attributions, to the fullest extent permitted by applicable law.

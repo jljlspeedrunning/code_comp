@@ -1,3 +1,2 @@
-import pyscript
-print(dir(pyscript))
-# pyscript.document.querySelector("#output").innerText = "Hello World"
+from pyscript import document
+document.querySelector("#output").innerText = "Hello World"
