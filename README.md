@@ -1,7 +1,5 @@
 # Project Description:
-This project is a work of process for the upcoming submission of HackYoung Olympiad. You can view an HTML file with a web browser, but make sure to download the file first, as it is the recommended method.
-
-Please only view the html code in 1920:1080, as any other resolution may not show the intended content.
+Please only view the html code in 1920:1080 in Google Chrome, as any other resolution may not show the intended content.
 
 ## Project Format
 - The main page "index.html" is where I put general information of water sanitation (already completed).

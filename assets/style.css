@@ -62,6 +62,11 @@ h3 {
     font-size: 25px;
 }
 
+a {
+    margin: 20px;
+    color: black;
+}
+
 table {
     cursor: pointer;
     margin: auto;
