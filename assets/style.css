@@ -43,7 +43,6 @@ body {
 
 .left {
     margin-left: 200px;
-    
 }
 
 .right {
@@ -63,7 +62,17 @@ h3 {
     font-size: 25px;
 }
 
-a {
-    margin: 20px;
-    color: black;
+table {
+    cursor: pointer;
+    margin: auto;
+}
+
+td {
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background-color: lawngreen;
+    font-size: 25px;
+    font-family: "Times New Roman", serif;
+    color: lawngreen;
 }
