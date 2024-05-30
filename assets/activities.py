@@ -13,7 +13,6 @@ class Game:
         self.week, self.leftover = 0, 0
         self.grid, self.lifespans = numpy.array([]), numpy.array([[7 for _ in range(20)] for _ in range(20)])
         self.make_board()
-        self.subtract = False
         self.rate = 80000
         self.reset()
 
@@ -66,10 +65,10 @@ class Game:
         self.start.html = f'Play * {self.time}'
         # self.change_color(int(event.target.getAttribute("data-y")), int(event.target.getAttribute("data-x")),
         #                   self.get_color(random.randint(0, 6)))
-        self.subtract = True
+
         iteration = 0
 
-        while self.subtract and self.leftover > 0:
+        while not worker.sync.stop() and self.leftover > 0:
             if iteration % self.rate == 0:
                 self.leftover -= 1
                 print(self.leftover)
@@ -80,25 +79,21 @@ class Game:
 
             iteration += 1
 
-        if not self.subtract:
+        if worker.sync.stop:
             print("read end")
 
         if self.leftover == 0:
             print(self.lifespans)
             self.reset()
 
-    def release(self, event):
-        print("END")
-        self.subtract = False
+    # def release(self, event):
+    #     print("END")
+    #     self.subtract = False
 
 game = Game()
-worker = PyWorker("./assets/worker.py")
-# print(worker.sync.game)
+worker = PyWorker("./assets/worker.py", type="pyodide")
+worker.sync.stop = (lambda: 0)
 
 @when("mousedown", "span")
 def down(event):
     game.press(event)
-
-@when("mouseup", "span")
-def up(event):
-    game.release(event)

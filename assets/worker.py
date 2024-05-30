@@ -1,4 +1,6 @@
-# from pyscript import sync
-# from activities import game
+from pyscript import sync, when
 
-# sync.game = game
+@when("mouseup", "span")
+def up(event):
+    sync.stop = (lambda: 1)
+    print("END")
