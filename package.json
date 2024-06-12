@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@pyscript/core": "^0.4.34",
-    "pyodide": "^0.25.1"
-  },
-  "interpreter": "\"./pyodide/pyodide.mjs\""
-}
